@@ -1,0 +1,6 @@
+{
+  "name": "ToDoApp",
+  "description": "ToDoApp on Heroku",
+  "image": "heroku/python",
+  "keywords": ["python", "django" ]
+}

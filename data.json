@@ -1,0 +1,157 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$CXxAUCYL3OVq$BuqbAOuUodMQLEPcrseGVIRl3475ruG6pYMXL2Ctat4=",
+        "last_login": "2020-09-01T11:16:07.665",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-09-01T11:15:41.193",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$h5t4MMECUP6o$mjiFnEaOffnxv+tFYfeA5ihdoptHX41jkFMuGWhU63o=",
+        "last_login": "2020-09-08T13:31:34.336",
+        "is_superuser": true,
+        "username": "pws_admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-09-08T13:24:40",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "1rlj297tzvczx3qwwyhl8aun3bh7u4qp",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnrjb2OKek5g7X-4QBypDipEHeHSCmgfTPzXsLztla_9bz4KYmzQHH63QLHR247SHdut1nGua3LFOSuyIN2eZ1Tfl4O9--gcq_fmszIOmrC4kx0lhVgKdoZFwsETaAQiCIDBmdBW9ajGzAPBKioWMzi_QG8gDaE:1kFauU:hYfyob5N7nnJg597erNN-ynM9ZSpanqgfaFt30nwcoU",
+        "expire_date": "2020-09-22T13:31:34.522"
+    }
+},
+{
+    "model": "tasks.category",
+    "pk": 1,
+    "fields": {
+        "slug": "Business",
+        "name": "Business",
+        "todos_count": 3
+    }
+},
+{
+    "model": "tasks.category",
+    "pk": 2,
+    "fields": {
+        "slug": "Dosug",
+        "name": "Dosug",
+        "todos_count": 2
+    }
+},
+{
+    "model": "tasks.category",
+    "pk": 3,
+    "fields": {
+        "slug": "Superdela",
+        "name": "Superdela",
+        "todos_count": 1
+    }
+},
+{
+    "model": "tasks.todoitem",
+    "pk": 1,
+    "fields": {
+        "description": "Disassemble paper",
+        "is_completed": false,
+        "created": "2020-09-01T11:18:09.365",
+        "updated": "2020-09-08T13:42:44.671",
+        "owner": [
+            "admin"
+        ],
+        "priority": 2,
+        "category": [
+            1
+        ]
+    }
+},
+{
+    "model": "tasks.todoitem",
+    "pk": 2,
+    "fields": {
+        "description": "To work",
+        "is_completed": false,
+        "created": "2020-09-01T11:26:40.253",
+        "updated": "2020-09-08T13:42:24.613",
+        "owner": [
+            "admin"
+        ],
+        "priority": 2,
+        "category": [
+            1
+        ]
+    }
+},
+{
+    "model": "tasks.todoitem",
+    "pk": 3,
+    "fields": {
+        "description": "Sunbathe",
+        "is_completed": false,
+        "created": "2020-09-01T11:26:59.023",
+        "updated": "2020-09-08T13:42:01.877",
+        "owner": [
+            "admin"
+        ],
+        "priority": 1,
+        "category": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "tasks.todoitem",
+    "pk": 4,
+    "fields": {
+        "description": "Sleep",
+        "is_completed": false,
+        "created": "2020-09-04T11:01:56.539",
+        "updated": "2020-09-08T13:41:39.218",
+        "owner": [
+            "admin"
+        ],
+        "priority": 3,
+        "category": [
+            2
+        ]
+    }
+},
+{
+    "model": "tasks.todoitem",
+    "pk": 5,
+    "fields": {
+        "description": "Very Important!",
+        "is_completed": true,
+        "created": "2020-09-04T11:12:53.696",
+        "updated": "2020-09-08T13:36:36.236",
+        "owner": [
+            "admin"
+        ],
+        "priority": 1,
+        "category": [
+            3
+        ]
+    }
+}
+]

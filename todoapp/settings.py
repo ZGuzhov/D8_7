@@ -3,11 +3,13 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = os.environ.get('SECRET_KEY', 'please-set-secret-key-through-env')
+# SECRET_KEY = os.environ.get('SECRET_KEY', 'please-set-secret-key-through-env')
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['evening-retreat-61525.herokuapp.com']
 
 
 INSTALLED_APPS = [
@@ -52,12 +54,13 @@ TEMPLATES = [
 WSGI_APPLICATION = 'todoapp.wsgi.application'
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))}
 
 
 LANGUAGE_CODE = 'ru-RU'
