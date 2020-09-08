@@ -66,6 +66,8 @@ DATABASES = {'default': dj_database_url.config(default=os.environ.get('DATABASE_
 
 LANGUAGE_CODE = 'ru-RU'
 
+TIME_ZONE = 'Europe/Moscow'
+
 
 django_heroku.settings(locals())
 
